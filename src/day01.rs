@@ -22,8 +22,7 @@ pub fn task1() {
     if current_sum > max_sum {
         max_sum = current_sum;
     }
-    println!("Day 1, task 1");
-    println!("Total calories: {}", max_sum);
+    println!("01.1: {}", max_sum);
 }
 
 pub fn task2() {
@@ -41,6 +40,5 @@ pub fn task2() {
     }
     data.sort_by(|a, b| b.cmp(a));
     let sum = data.iter().take(3).fold(0, |tot, x| tot + x);
-    println!("Day 1, task 2");
-    println!("Total calories: {}", sum);
+    println!("01.2: {}", sum);
 }

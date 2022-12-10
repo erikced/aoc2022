@@ -12,8 +12,7 @@ pub fn task1() {
         .map(|line| line.unwrap())
         .map(|line| calculate_priority(&line))
         .fold(0, |tot, x| x + tot);
-    println!("Day 3, task 1");
-    println!("Total priority: {}", priority);
+    println!("03.1: {}", priority);
 }
 
 fn calculate_priority(s: &str) -> i64 {
@@ -54,6 +53,5 @@ pub fn task2() {
             )
         })
         .fold(0, |tot, x| tot + x);
-    println!("Day 3, task 2");
-    println!("Total priority: {}", priority);
+    println!("03.2: {}", priority);
 }

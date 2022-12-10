@@ -18,8 +18,7 @@ pub fn task1() {
             shape_score + outcome_score
         })
         .fold(0, |tot, x| tot + x);
-    println!("Day 2, task 1");
-    println!("Score: {}", score);
+    println!("02.1: {}", score);
 }
 
 pub fn task2() {
@@ -42,6 +41,5 @@ pub fn task2() {
             },
         )
         .fold(0, |tot, x| tot + x);
-    println!("Day 2, task 2");
-    println!("Score: {}", score);
+    println!("02.2: {}", score);
 }

@@ -25,8 +25,7 @@ pub fn task1() {
         .slice_mut(s![.., visibility_map.shape()[1] - 1])
         .fill(true);
     let num_visible = visibility_map.iter().copied().filter(|x| *x).count();
-    println!("Day 8, task 1");
-    println!("Total trees visible: {}", num_visible);
+    println!("08.1: {}", num_visible);
 }
 
 pub fn task2() {
@@ -39,8 +38,7 @@ pub fn task2() {
         update_score(scores.column_mut(column), map.column(column));
     }
     let max_score = scores.iter().fold(0, |tot, x| max(tot, *x));
-    println!("Day 8, task 2");
-    println!("Max scenic score: {}", max_score);
+    println!("08.2: {}", max_score);
 }
 
 fn update_visibility(mut visibility_map: ArrayViewMut1<bool>, map: ArrayView1<u32>) {

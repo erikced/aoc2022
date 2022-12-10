@@ -1,18 +1,15 @@
 use std::collections::BTreeSet;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
-use std::cmp::min;
 
 static FILENAME: &str = "data/day06";
 
 pub fn task1() {
-    println!("Day 6, task 1");
-    println!("Position: {}", get_start_position(4));
+    println!("06.1: {}", get_start_position(4));
 }
 
 pub fn task2() {
-    println!("Day 6, task 2");
-    println!("Position: {}", get_start_position(14));
+    println!("06.2: {}", get_start_position(14));
 }
 
 fn get_start_position(num_unique: usize) -> usize {

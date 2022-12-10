@@ -16,8 +16,7 @@ pub fn task1() {
             cur_stacks
         });
     let top_items: String = stacks.into_iter().map(|stack| *stack.last().unwrap()).collect();
-    println!("Day 5, task 1");
-    println!("Top crates: {}", top_items);
+    println!("05.1: {}", top_items);
 }
 
 pub fn task2() {
@@ -35,8 +34,7 @@ pub fn task2() {
             cur_stacks
         });
     let top_items: String = stacks.into_iter().map(|stack| *stack.last().unwrap()).collect();
-    println!("Day 5, task 2");
-    println!("Top crates: {}", top_items);
+    println!("05.2: {}", top_items);
 }
 
 fn load_data() -> (Vec<Vec<char>>, Vec<(usize, usize, usize)>) {

@@ -6,16 +6,14 @@ static FILENAME: &str = "data/day04";
 
 pub fn task1() {
     let overlaps = check_overlaps(|((a, b), (c, d))| (a <= c && b >= d) || (c <= a && d >= b));
-    println!("Day 4, task 1");
-    println!("Total number of overlaps: {}", overlaps);
+    println!("04.1: {}", overlaps);
 }
 
 pub fn task2() {
     let overlaps = check_overlaps(|((a, b), (c, d))| {
         (a >= c && a <= d) || (b >= c && b <= d) || (c >= a && c <= b) || (d >= a && d <= b)
     });
-    println!("Day 4, task 2");
-    println!("Total number of overlaps: {}", overlaps);
+    println!("04.2: {}", overlaps);
 }
 
 fn check_overlaps<F>(have_overlap: F) -> usize
