@@ -15,7 +15,10 @@ pub fn task1() {
             }
             cur_stacks
         });
-    let top_items: String = stacks.into_iter().map(|stack| *stack.last().unwrap()).collect();
+    let top_items: String = stacks
+        .into_iter()
+        .map(|stack| *stack.last().unwrap())
+        .collect();
     println!("05.1: {}", top_items);
 }
 
@@ -33,7 +36,10 @@ pub fn task2() {
             tmp.clear();
             cur_stacks
         });
-    let top_items: String = stacks.into_iter().map(|stack| *stack.last().unwrap()).collect();
+    let top_items: String = stacks
+        .into_iter()
+        .map(|stack| *stack.last().unwrap())
+        .collect();
     println!("05.2: {}", top_items);
 }
 

@@ -17,11 +17,20 @@ fn get_start_position(num_unique: usize) -> usize {
     let mut line = String::new();
     reader.read_line(&mut line).unwrap();
     let buffer = line.chars().collect::<Vec<char>>();
-    (0..buffer.len() - num_unique).filter_map(|tag_start| {
-        if buffer[tag_start..tag_start + num_unique].iter().copied().collect::<BTreeSet<_>>().len() == num_unique {
-            Some(tag_start + num_unique)
-        } else {
-            None
-        }
-    }).nth(0).unwrap()
+    (0..buffer.len() - num_unique)
+        .filter_map(|tag_start| {
+            if buffer[tag_start..tag_start + num_unique]
+                .iter()
+                .copied()
+                .collect::<BTreeSet<_>>()
+                .len()
+                == num_unique
+            {
+                Some(tag_start + num_unique)
+            } else {
+                None
+            }
+        })
+        .nth(0)
+        .unwrap()
 }

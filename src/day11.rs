@@ -27,7 +27,8 @@ pub fn task1() {
 pub fn task2() {
     let monkeys = load_data();
     let common_denominator: u64 = monkeys.iter().map(|monkey| monkey.divisor).product();
-    let monkey_business_level = get_monkey_business_level(monkeys, 10000, |val| val % common_denominator);
+    let monkey_business_level =
+        get_monkey_business_level(monkeys, 10000, |val| val % common_denominator);
     println!("11.2: {}", monkey_business_level);
 }
 
