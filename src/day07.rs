@@ -11,7 +11,7 @@ pub fn task1() {
         .into_iter()
         .filter(|s| *s <= 100000)
         .sum();
-    println!("07.1.: {}", total_size);
+    println!("07.1: {}", total_size);
 }
 
 pub fn task2() {
@@ -23,7 +23,7 @@ pub fn task2() {
         .filter(|s| *s >= needed_size)
         .nth(0)
         .unwrap();
-    println!("07.2.: {}", removed_size);
+    println!("07.2: {}", removed_size);
 }
 
 pub fn read_directories() -> Vec<usize> {

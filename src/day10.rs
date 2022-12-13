@@ -27,9 +27,9 @@ pub fn task2() {
             display[row][col] = '#'
         };
     }
-    println!("10.2:");
-    for row in display {
-        println!("{:}", row.into_iter().collect::<String>());
+    println!("10.2: {:}", display[0].into_iter().collect::<String>());
+    for row in &display[1..] {
+        println!("      {:}", row.into_iter().collect::<String>());
     }
 }
 
