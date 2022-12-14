@@ -1,9 +1,6 @@
-use itertools::EitherOrBoth::{Both, Left, Right};
 use itertools::Itertools;
 use ndarray::prelude::*;
 use ndarray::Array2;
-use std::cmp::Ordering;
-use std::cmp::Ordering::{Equal, Greater, Less};
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
