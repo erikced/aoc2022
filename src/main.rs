@@ -11,6 +11,7 @@ pub mod day10;
 pub mod day11;
 pub mod day12;
 pub mod day13;
+pub mod day14;
 
 fn main() {
     day01::task1();
@@ -39,4 +40,6 @@ fn main() {
     day12::task2();
     day13::task1();
     day13::task2();
+    day14::task1();
+    day14::task2();
 }
