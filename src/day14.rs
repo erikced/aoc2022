@@ -95,7 +95,6 @@ fn create_map(add_floor_and_pad_width: bool) -> Map {
         min.0 - 1
     };
     let map_size = (height, width);
-    println!("Map size {:?}", map_size);
     let mut map = Map {
         data: Array2::<bool>::from_elem(map_size, false),
         x_offset,
